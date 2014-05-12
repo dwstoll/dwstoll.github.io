@@ -1,14 +1,19 @@
 <!doctype html>
 <html ng-app>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js" ></script><script src="HauptController.js" > </script>
   </head>
-  <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <hr>
-      <h1>Hello {{yourName}}!</h1>
-    </div>
+  <body ng-controller="AdressbuchController">
+ 
+      <label >Bitte Vor- oder Nachnamen eingeben:</label>
+      <input type="text" ng-model="suche" placeholder="Suchfeld">
+
+
+	 <ul>
+  		<li ng-repeat="person in benutzer | filter:suche">
+              Nachname: {{person.name}} <br /> 
+              Vorname: {{person.vorname}} <br /> Weitere Daten: <br /> <br /> 
+          </li>
+	 </ul>
   </body>
 </html>
