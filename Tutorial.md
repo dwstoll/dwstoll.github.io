@@ -1,7 +1,7 @@
 dwstoll.github.io - AngularJS Tutorial
 =================
 
-# Überblick 
+## Überblick 
 
 AngularJS ist ein populäres Open Source JavaScript-Framework, welches im Jahr 2009 von Google Inc. unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde.
 
@@ -9,7 +9,7 @@ Das Framework dient der Unterstüztung der Softwareentwicklung von dynamischen W
 
 In Angular werden HTML, CSS und JavaScript nicht wie bei vielen anderen Frameworks gekapselt, sondern um weitere Funktionalitäten erweitert. 
 
-Ursprünglich sieht ANgular vor, dass eine WEbabpplikation nach dem Model View Controller (MVC) Prinzip implementiert ist. Im Laufe der Zeit etablierte sich auch der Ansatz des Model View View Model (MVVM).
+Ursprünglich sieht ANgular vor, dass eine Webabpplikation nach dem Model View Controller (MVC) Prinzip implementiert ist. Im Laufe der Zeit etablierte sich auch der Ansatz des Model View View Model (MVVM).
 In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip Model View Whatever (MVW).
 
 ## Quick Start
