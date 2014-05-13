@@ -1,4 +1,4 @@
-dwstoll.github.io - AngularJS Tutorial
+AngularJS Tutorial
 =================
 
 ## Überblick 
