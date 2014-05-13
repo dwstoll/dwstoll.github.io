@@ -36,51 +36,106 @@
 <body>
   <div class="deck-container">
 
-    <!-- Begin slides -->
-    <section class="slide" id="title-slide">
-      <h1>AngularJS die Zukunft im Universum</h1>
+        <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide deck-current" id="intro">
+
+      <hgroup>
+				
+			<h1>AngularJS</h1>
+      
+      <h2>Eine Präsentation von Daniel Stoll und Lisa Hanstein, 19. Mai 2014</h2>
+      
+      </hgroup>
     </section>
 
-    <section class="slide" id="how-to-overview">
-      <h2>Schauen wir einfach mal</h2>
-      <ol>
-        <li>
-          <h3>Write Slides</h3>
-          <p>Slide content is simple&nbsp;HTML.</p>
-        </li>
-        <li>
-          <h3>Choose Themes</h3>
-          <p>One for slide styles and one for deck&nbsp;transitions.</p>
-        </li>
-        <li>
-          <h3>Include Extensions</h3>
-          <p>Add extra functionality to your deck, or leave it stripped&nbsp;down.</p>
-        </li>
+    <section class="slide">
+     <h2>Agenda</h2>
+     <ol>
+       <li>
+          <h3>Definition</h3>
+       </li>
+       <li>
+          <h3>Grundgerüst</h3>
+       </li>
+       <li>
+          <h3>Hauptkonzepte</h3>
+          <p>- 2-Wege Datenbindung</p>
+          <p>- Dependency Injection</p>
+          <p>- Testen</p>
+          <p>- Direktiven</p>
+       </li>
+       <li>
+          <h3>Vor- und Nachteile</h3>
+       </li>
+       <li>
+          <h3>Fazit</h3>
+       </li>
       </ol>
+      
+
     </section>
 
-    <section class="slide" id="quick-start">
-      <h2>Quick Start</h2>
-      <p>When you <a href="https://github.com/imakewebthings/deck.js/archive/latest.zip">download</a> deck.js, it will include a file named <code>boilerplate.html</code>. You can immediately start editing slides in this page and viewing them in your web browser. Later on, when you are comfortable customizing the deck, you can edit the various pieces of the boilerplate or make your own to suit your needs.</p>
+    <section class="slide">
+    <h2>Definition - Was ist AngularJS?</h2>
+    <ul>
+        <li><p>Sehr populäres Open Source JavaScript-Framework (komplex) Clientseitiges Applikationsframework. IN AngularJS werden HTML und JS nicht wie bei vielen anderen Frameworks weggekapselt, sndern um Funktionalitäten erweitert</p></li>
+        <li><p>Ziel: HTML soll fitter für Web Applikationen werden (dynamischer)</p></li>
+        <li><p>Von Google Inc. (Erscheinungsjahr 2009) unter der MIT-Lizenz zur kostenlosen Nutzung bereitgestellt, aktuelle Version 1.2.16 April 2014, Programmiersprache JavaScript</p></li>
+        <li><p>Unterstützung der Softwareentwicklung von dynamischen Webanwendungen (besonders SPA), da HTML bei statischen Dingen gut, aber dynamisch doof</p></li>
+        <li><p>Nach dem MVVM- bzw. MVC-Modell / Architektur</p></li>
+    </ul>
+  </section>
+
+    <section class="slide">
+      <h2>Grundgerüst - Wie ist der generelle Aufbau mit AngularJS?</h2>
+      Installation von AngularJS und einbinden in die HTML seiten. Doppelt geschweifte Klammern, ...
     </section>
 
-    <section class="slide" id="markup">
-      <h2>The Markup</h2>
-      <p>Slides are just HTML elements with a class of <code>slide</code>.</p>
-      <pre><code>&lt;section class=&quot;slide&quot;&gt;
-  &lt;h2&gt;How to Make a Deck&lt;/h2&gt;
-  &lt;ol&gt;
-    &lt;li&gt;
-      &lt;h3&gt;Write Slides&lt;/h3&gt;
-      &lt;p&gt;Slide content is simple HTML.&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;h3&gt;Choose Themes&lt;/h3&gt;
-      &lt;p&gt;One for slide styles and one for deck transitions.&lt;/p&gt;
-    &lt;/li&gt;
-    &hellip;
-  &lt;/ol&gt;
-&lt;/section&gt;</code></pre>
+    <section class="slide">
+      <h2>Hauptkonzepte - Was macht AngularJS aus?</h2>
+      <h3>2-Wege Datenbindung</h3>
+    </section>
+
+    <section class="slide">
+      <h3>Dependency Injection</h3>
+    </section>
+
+    <section class="slide">
+      <h3>Testen</h3>
+    </section>
+
+    <section class="slide">
+      <h3>Direktiven</h3>
+    </section>
+
+    <section class="slide">
+     <h2>Vor- und Nachteile</h2>
+     <h3>+   Vereinfachung der Softwareentwicklung von dynamischen Webanwendungen</h3>
+      <ul>
+        <li><p>Quellcode: starke Reduzierung des Umfangs, gute Lesbarkeit, verständlich (gut für Zusammenarbeit Designer und Entwickler)</p></li>
+        <li><p>Qualität: leichte Testbarkeit und einfaches Refactoring</p></li> 
+        <li><p>Einbindung fremder Bibliotheken möglich</p></li>
+        <li><p>Populäres Framework -> starke Community</p></li>
+    </ul>
+    </section>
+
+  <section class="slide">
+     <h3>-</h3>
+     <ul>
+        <li><p>Performanceverlust in manchen Fällen http://www.senaeh.de/angularjs/</p></li>
+       <li> <p>Einarbeitung nötig</p></li>
+    </ul>
+    </section>
+
+    <section class="slide">
+      <h2>Fazit</h2>
+      Einfach über die AngularJS Website oder über GitHub das ganze downloaded und dann kann es schon beginnen.
+      da angular nur den mit ng-app markierten Bereich verarbeitet, lässt es sich gut mit anderen Bibliotheken verbinden und auch in ältere Webanwendungen einbauen.
+    </section>
+
+    <section class="slide">
+      <h2>Danke für Eure Aufmerksamkeit</h2>
     </section>
 
     <section class="slide" id="themes">
