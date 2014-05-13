@@ -12,7 +12,9 @@ In Angular werden HTML, CSS und JavaScript nicht wie bei vielen anderen Framewor
 Ursprünglich sieht Angular vor, dass eine Webabpplikation nach dem Model View Controller (MVC) Prinzip implementiert ist. Im Laufe der Zeit etablierte sich auch der Ansatz des Model View View Model (MVVM).
 In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip Model View Whatever (MVW).
 
-Ng-app: Das folgende HTML-Dokument enhält ANgular Expressions, also angular js wird verwendet. (wäre auch nur in body möglich)
+Ng-app: Das folgende HTML-Dokument enhält ANgular Expressions, also angular js wird verwendet. (wäre auch nur in body möglich)7
+DAnn wird noch die Bibliothek bekanntgemacht. 
+Diese zwei SChritte müssen immer gemacht werden (das ist eigentlich recht wernig). Danach kann direkt gestartet werden.
 
 Insgesamt kann die Softwareentwicklung von dynamischen Webanwendungen durch den Einsatz von AngularJS stark vereinfacht werden, denn zum einen kann der Umfang des Quellcodes stark reduziert werden. Außerdem wird der Quellcode lesbarer und somit auch verständlicher. Dies fördert die arbeitsteilige Entwicklung beispielsweise auch von Entwicklern und Designern. 
 Außerdem fördert AngularJS eine leichte Testbarkeit und ein einfaches Refactoring.
