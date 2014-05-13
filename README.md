@@ -19,6 +19,7 @@ Da AngularJS ein populäres Framwork ist, sind außerdem viele Dokumentationen v
 
 Einziger Nachteil bei komplexeren Anwendungen kann ein Performanceverlust auftreten.
 Zudem erfordert die Anwendung von AngularJS auch eine Einarbeitung.
+Performanceverlust in manchen Fällen http://www.senaeh.de/angularjs
 
 Einfach über die AngularJS Website oder über GitHub das ganze downloaded und dann kann es schon beginnen. da angular nur den mit ng-app markierten Bereich verarbeitet, lässt es sich gut mit anderen Bibliotheken verbinden und auch in ältere Webanwendungen einbauen. 
 
