@@ -3,7 +3,7 @@ AngularJS Tutorial
 
 ## Überblick 
 
-AngularJS ist ein populäres Open Source JavaScript-Framework, welches im Jahr 2009 von Google Inc. unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde.
+AngularJS ist ein populäres Open Source JavaScript-Framework (Programmiersprache = JavaScript und Anwendung in JavaScript), welches im Jahr 2009 von Google Inc. unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde (aktuelle Version 1.2.16 April 2014)
 
 Das Framework dient der Unterstüztung der Softwareentwicklung von dynamischen Webanwendungen (Clientseitige Applikationen), insbesondere sogeannte Single-page Web Applications (SPA). Damit HTML besser in dynamischen Anwendungen genutzt werden kann (denn gut in statischen Anwendungen, aber schrott in dynamischen).
 
