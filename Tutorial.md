@@ -9,10 +9,20 @@ Das Framework dient der Unterstüztung der Softwareentwicklung von dynamischen W
 
 In Angular werden HTML, CSS und JavaScript nicht wie bei vielen anderen Frameworks gekapselt, sondern um weitere Funktionalitäten erweitert. 
 
-Ursprünglich sieht ANgular vor, dass eine Webabpplikation nach dem Model View Controller (MVC) Prinzip implementiert ist. Im Laufe der Zeit etablierte sich auch der Ansatz des Model View View Model (MVVM).
+Ursprünglich sieht Angular vor, dass eine Webabpplikation nach dem Model View Controller (MVC) Prinzip implementiert ist. Im Laufe der Zeit etablierte sich auch der Ansatz des Model View View Model (MVVM).
 In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip Model View Whatever (MVW).
 
+Insgesamt kann die Softwareentwicklung von dynamischen Webanwendungen durch den Einsatz von AngularJS stark vereinfacht werden, denn zum einen kann der Umfang des Quellcodes stark reduziert werden. Außerdem wird der Quellcode lesbarer und somit auch verständlicher. Dies fördert die arbeitsteilige Entwicklung beispielsweise auch von Entwicklern und Designern. 
+Außerdem fördert AngularJS eine leichte Testbarkeit und ein einfaches Refactoring.
+Ein weiterer Vorteil ist, dass HTML, CSS und JavaScript nicht, wie in vielen anderen Framworks gekapselt wird, sonder nur um Funktionalitäten erweitert wird. So wird garantiert, dass weitere Bibliotheken eingebunden werden können, und ANgularJS auch in bereits bestehende Anwendungen integriert werden kann.
+Da AngularJS ein populäres Framwork ist, sind außerdem viele Dokumentationen vorhanden und außerdem ist in Fehlerfällen eine große Entwicklergemeinsschaft vorhanden.
+
+Einziger Nachteil bei komplexeren Anwendungen kann ein Performanceverlust auftreten.
+Zudem erfordert die Anwendung von AngularJS auch eine Einarbeitung.
+
 ## Quick Start
+
+Hier dann das Grundgerüst vorstellen -> Welche Änderungen müssen im HTML-Dokument gemacht werden?
 
 This repository includes a `boilerplate.html` as a starting point, with all the extensions included. Just [download it](https://github.com/imakewebthings/deck.js/archive/latest.zip), open `boilerplate.html`, and start editing your slides.
 
