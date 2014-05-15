@@ -30,6 +30,10 @@
   <!-- Basic black and white print styles -->
   <link rel="stylesheet" media="print" href="core/print.css">
 
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+   <script src="HauptController.js" > </script>
+
   <!-- Required Modernizr file -->
   <script src="modernizr.custom.js"></script>
 </head>
@@ -101,13 +105,149 @@
     </section> 
 
 
-    <section class="slide" id="elements-images">
-      <h2>Hauptkonzepte - Zweidimensionale Datenbindung</h2>
-	 
+ 
+    <section class="slide" id="datenbindung">
+         <h2>Zweidimensionale Datendbindung</h2>
+		 <h4>Beispiel</h4>
+	        <label>Name: </label>
+      <input type="text" ng-model="deinName" placeholder="Bitte Name eingeben">
+	  
+      
+      <p>Herzlich Willkommen {{deinName}} </p>
+	  
+	  <h4>HTML-Dokument</h4>
+	        <pre><code>&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+      &lt;label&gt;Name:&lt;/label&gt;
+      &lt;input type=&quot;text&quot; placeholder=&quot;Bitte Name eingeben&quot;&gt;
+      &lt;h1&gt;Herzlich Willkommen &lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p><strong>Mit JavaScript:</strong> DOM-Manipulation, Event-Handler, ... </p> 	 
     </section>
 
-    <section class="slide">
-      <h3>Dependency Injection</h3>
+	
+	
+	    <section class="slide" id="datenbindung2">
+         <h2>Zweidimensionale Datenbindung</h2>
+		 <h4>Mit AngularJS:</h4>
+	      	        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html <strong>ng-app</strong>&gt;
+  &lt;head&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/
+	angular.min.js&quot;&gt; &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body &gt;
+      &lt;label&gt;Name:&lt;/label&gt;
+      &lt;input type="text" <strong>ng-model=&quotdeinName&quot</strong> placeholder="Bitte Name eingeben"&gt;
+      
+      &lt;h1&gt;Herzlich Willkommen <strong> &#123; &#123; deinName &#125; &#125;  </strong> &lt;/h1&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>Zweidimensionale Datenbindung zwischen <strong>Eingabefeld (Model)</strong> mittels Angular-Attribut <strong>ng-model</strong> und <br /><strong>H1-Tag (View)</strong> mittels <strong>Expression</strong>
+	 
+    </section>
+	
+	
+	
+	<section class="slide" id="datenbindung3">
+     <h2>Zweidimensionale Datenbindung</h2>
+	 <p><strong>Funktionsweise zweidimensionale Datenbindung</strong></p>
+      <img src="data-binding.png" alt="Datenbindung">
+    </section>
+	
+	
+		<section class="slide" id="datenbindung4" ng-controller="AdressbuchController">
+     <h2>Zweidimensionale Datenbindung</h2>
+	 <h4>Beispiel: Zweidimensionale Datenbindung mit MVC</h4>
+       <label >Bitte Vor- oder Nachnamen eingeben:</label>
+      <input type="text" ng-model="suche" placeholder="Suchfeld">
+	  
+	  <ul>
+  		<li ng-repeat="person in benutzer | filter:suche">
+              Nachname: {{person.name}} <br /> 
+              Vorname: {{person.vorname}} <br /> Weitere Daten: <br /> <br /> 
+          </li>
+	 </ul>
+    </section>
+	
+	
+	  <section class="slide" id="datenbindung5">
+         <h2>Zweidimensionale Datenbindung</h2>
+		 <h4>Controller- und Model-Code in externen JavaScript-Datei: HauptController.JS</h4>
+	      	        <pre><code>function AdressbuchController (<strong>$scope</strong>) {	
+	<strong>$scope.benutzer</strong> = [
+	{"vorname": "Max", "name": "Meier"},
+	{"vorname": "Florian", "name": "Wiegand"},
+         ...
+         ...	
+	];	
+}</code></pre>
+<p><strong>Controller</strong> besitzt immer eine <strong>$scope-Variable</strong><p>
+<p><strong>$scope-Objektvariable</strong> für Verbindung zum <strong>View</strong></p>
+<p>Einbindung Controller-JavaScript-Datei im Head des HTML-Dokuments</p>
+	 
+    </section>
+	
+	
+	
+		  <section class="slide" id="datenbindung6">
+         <h2>Zweidimensionale Datenbindung</h2>
+		 <h4>Body des HTML-Dokuments (View)</h4>
+	      	        <pre><code>&lt;body <strong>ng-controller=“AdressbuchController&quot;</strong>&gt;
+ 
+    &lt;label &gt;Bitte Vor- oder Nachnamen eingeben:&lt;/label&gt;
+    &lt;input type=&quot;text&quot; <strong>ng-model=&quot;suche&quot;</strong> placeholder=&quot;Suchfeld&quot;&gt;
+
+
+    &lt;ul&gt;
+  		<strong>&lt;li ng-repeat=“person in benutzer |  filter:suche&quot;&gt;</strong>
+                         Nachname: <strong>{ { person.name } }</strong>           &lt;br /&gt; 
+                         Vorname: <strong>{ { person.vorname } }</strong>         &lt;br /&gt; 
+			 Weitere Daten:                          &lt;br /&gt; &lt;br /&gt; 
+                &lt;/li&gt;
+    &lt;/ul&gt;
+
+&lt;/body&gt;  </code></pre>
+<p><strong>ng-repeat</strong> iteriert über jedes Objekt aus dem Array <strong>benutzer</strong><p>
+<p>Austausch über <strong>$scope-Variable</strong><p>
+	 
+    </section>
+	
+
+    	
+	<section class="slide" id="dependencyinjection">
+     <h2>Dependency Injection</h2>
+	 <p>Objekte sind wiederum von <strong>anderen Objekten abhängig</strong></p>
+	 <p>Möglichkeiten zur Instanziierung von Objekten und Definition von <strong>Abhängigkeiten</strong> </strong></p>
+	 <ol>
+		<li><strong>Innerhalb</strong> einer  <strong>Funktion</strong> über new-Parameter: Beispiel <strong>Adressbuch-Objekt</strong> (Problem: Testen: Unabhängigkeit ... eigene Testobjekte)</li>
+			<pre><code>function sucheAdressbuch(benutzer){
+	<strong>var db = new Database(...);</strong>
+	db.suche(benutzer);
+
+} </code></pre>
+		
+		
+		<li><strong>Außerhalb</strong> einer <strong>Funktion</strong>: Objekt als <strong>Übergabeparameter</strong></li>
+	 <pre><code>function sucheAdressbuch(<strong>db</strong>,benutzer){
+	<strong>db</strong>.suche(benutzer);
+
+} </code></pre>
+	 </ol>
+	 
+
+    </section>
+	
+		<section class="slide" id="dependencyinjection2">
+     <h2>Dependency Injection</h2>
+	 <p>AngularJS: 2. Variante </p>
+	 <p>Automatische Instanziierung bei AngularJS-Standardkonstrukten: z.B. $scope-Objekt </p>
+	 <p>Funktionsaufruf: Entsprechendes Objekt wird automatisch übergeben </p>
+	 <p>Selbstprogrammierte Objekte: Möglichkeit zur Definition von Instanziierungen über spezielle Injektoren </p>
+         
     </section>
 
     <section class="slide">
