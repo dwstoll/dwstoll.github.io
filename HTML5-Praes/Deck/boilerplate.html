@@ -248,7 +248,9 @@
     <!-- Direktiven 2 -->
     <section class="slide">
       <h2>Direktiven</h2>
-      <pre><code>&lt;a class="custom-button"&gt;Click me&lt;/a&gt;</code></pre>
+      <pre><code>&lt;div ng-app="myApp"&gt;
+          &lt;a custom-button>Click me&lt;/a&gt;
+        &lt;/div&gt;</code></pre>
       <pre><code>.directive('customButton', function () {
             return {
                 link: function (scope, element, attrs) {
