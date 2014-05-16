@@ -29,7 +29,7 @@ Zum anderen wird der Ausdruck `ng-app` in dem Bereich hinzugefügt, in dem Angul
 ## Nützliche Webseiten
 
 Weitere Informationen zur Entwicklung von Webanwendungen mit Hilfe von AngularJS sind auf der [AngularJS Webseite](https://angularjs.org/) einzusehen.
-Die folgenden Seiten können besonders nützlich sein:
+Die folgenden Seiten können dabei besonders nützlich sein:
 
 - [Ausführliches Tutorial](https://docs.angularjs.org/tutorial)
 - [API-Referenz](https://docs.angularjs.org/api)
