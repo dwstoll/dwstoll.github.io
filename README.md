@@ -19,7 +19,7 @@ Zum einen wird der Ausdruck `ng-app` in dem Bereich hinzugefügt, in dem Angular
 `Ng-app` gehört bei einer reinen AngularJS-Applikation in das `<html>-Tag`. Wenn einzelne Seiten einer bestehenden Applikation erweitert werden sollen kann die Bekanntmachung auch in einem anderen Element erfolgen. Dann wandelt AngularJS nur den ausgewählten Bereich in eine AngularWebanwendung um. 
 
 Zudem muss die `angular.js`-Datei in das HTML-Dokument eingebunden werden. 
-Man kann entweder die Online-Version verwenden, die Google über ihr CDN verteilt oder die Datei von [angularjs.org](angularjs.org) herunterladen und lokal einbinde. Angular.js durchsucht den, in der HTML-Seite per 'ng-app' definierten Bereich, nach speziellen Tags und Attributen, die zum Framework gehören.
+Man kann entweder die Online-Version verwenden, die Google über ihr CDN verteilt oder die Datei von [angularjs.org](angularjs.org) herunterladen und lokal einbinde. `Angular.js` durchsucht den, in der HTML-Seite per `ng-app` definierten Bereich, nach speziellen Tags und Attributen, die zum Framework gehören.
 
 ### Zweidimensionale Datenbindung
 
