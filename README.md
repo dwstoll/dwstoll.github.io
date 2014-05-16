@@ -1,9 +1,7 @@
 AngularJS Tutorial
 =================
 
-## Überblick 
-
-
+## Einführung 
 
 ## Quick Start
 
