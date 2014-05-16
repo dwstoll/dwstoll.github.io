@@ -7,6 +7,8 @@ AngularJS Tutorial
 
 ## Quick Start
 
+### Grundgerüst
+
 Hier dann das Grundgerüst vorstellen -> Welche Änderungen müssen im HTML-Dokument gemacht werden?
 
 This repository includes a `boilerplate.html` as a starting point, with all the extensions included. Just [download it](https://github.com/imakewebthings/deck.js/archive/latest.zip), open `boilerplate.html`, and start editing your slides.
@@ -30,8 +32,6 @@ Die folgenden Seiten können besonders nützlich sein:
 - [FAQ](https://docs.angularjs.org/misc/faq)
 - [YouTube](https://www.youtube.com/user/angularjs)
 
-
-## License
 
 Copyright (c) 2014 Daniel Stoll und Lisa Hanstein
 
