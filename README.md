@@ -15,8 +15,8 @@ Nach AngularJS wird der grundlegende Aufbau einer Webanwendung nach dem Model Vi
 
 Um eine einfache Webanwendung mit AngularJS zu entwickeln muss die beteiligte HTML-Datei, wie im [Grundgerüst Code-Beispiel](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/Grundgeruest.html) verdeutlicht, um zwei Ausdrücke erweitert werden. 
 
-Zum einen muss die `angular.js`-Datei in das HTML-Dokument eingebunden werden. Dafür muss das <HEAD>-Element der HTML-Datei um den folgenden Ausdruch erweitert werden `(<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"> </script>;)`.
-Es kann entweder direkt auf die Online-Version von Google verwiesen oder aber die Datei von [angularjs.org](angularjs.org) heruntergeladen und lokal eingebunden werden. 
+Zum einen muss die `angular.js`-Datei in das `<HEAD>-Element` der HTML-Datei eingebunden werden. Dies kann direkt über den Verweis auf die Online-Version von Google per `<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"> </script>;` durchgeführt werden. Es ist außerdem möglich, die entsprechende Datei von [angularjs.org](angularjs.org) heruntzuladen und lokal einzubinden.
+
 
 Zum anderen wird der Ausdruck `ng-app` in dem Bereich hinzugefügt, in dem AngularJS verwendet werden soll. 
 `Ng-app` gehört bei einer reinen AngularJS-Applikation in das `<html>-Tag`. Wenn einzelne Seiten einer bestehenden Applikation erweitert werden sollen kann die Bekanntmachung auch in einem anderen Element erfolgen. Dann wandelt AngularJS nur den ausgewählten Bereich in eine AngularWebanwendung um. `angular.js` durchsucht den, in der HTML-Seite per `ng-app` definierten Bereich, nach speziellen Tags und Attributen, die zum Framework gehören.
