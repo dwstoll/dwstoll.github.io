@@ -234,18 +234,30 @@
 		<!-- Direktiven -->
     <section class="slide">
       <h2>Direktiven</h2>
-      <pre><code>&lt;price value="article.price" /&gt;</code></pre>
+      <ul>
+        <li><p>Erweiterung des Sprachumfangs von HTML</p></li>
+        <li><p>Trennung von Aussehen und Verhalten</p></li>
+        <li><p>AngularJS stellt einige Direktiven bereit</p></li>
+        <li><p>Anwender kann eigene Direktiven einführen</p></li>
+      </ul>
+    </section>
+
+    <!-- Direktiven -->
+    <section class="slide">
+      <h2>Direktiven</h2>
+      <pre><code>... 
+        &lt;td&gt;&lt;price value="article.price" /&gt;&lt;/td&gt;
+        ... 
+      </code></pre>
       
-      <pre><code>.directive('price', function(){
-        return {
-          restrict: 'E',
-          scope: {
-             value: '='
-          },
-        template: '<span ng-show="value == 0">kostenlos</span>' +
-        '<span ng-show="value > 0">{{value | currency}}</span>'
-        }
-        })</code></pre>
+      <pre><code>
+        .directive('price', function(){
+          return {
+            ...
+            },
+          template:
+            ... 
+        )</code></pre>
     </section>
 
     <!-- Vor- und Nachteile -->
