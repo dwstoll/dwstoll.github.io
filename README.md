@@ -11,18 +11,7 @@ Hier dann das Grundgerüst vorstellen -> Welche Änderungen müssen im HTML-Doku
 
 This repository includes a `boilerplate.html` as a starting point, with all the extensions included. Just [download it](https://github.com/imakewebthings/deck.js/archive/latest.zip), open `boilerplate.html`, and start editing your slides.
 
-## Dokumentation
 
-Weitere Informationen zur Entwicklung von Webanwendungen mit Hilfe von AngularJS sind auf der [AngularJS Webseite](https://angularjs.org/) einzusehen.
-Folgende Seiten sind besonders interessant.
-
-- [Ausführliches Tutorial](https://docs.angularjs.org/tutorial)
-- [API-Referenz](https://docs.angularjs.org/api)
-- [Entwickler Guide](https://docs.angularjs.org/guide)
-- [Anwendungen auf Basis von AngularJS](https://builtwith.angularjs.org/)
-- [Blog](http://blog.angularjs.org/)
-- [FAQ](https://docs.angularjs.org/misc/faq)
-- [YouTube](https://www.youtube.com/user/angularjs)
 
 
 ## Extensions, Themes, and Related Projects
@@ -63,13 +52,21 @@ If you would like to contribute a patch to deck.js please do as much as you can 
 - If the standard snippet of an extension changes, please change it in both the introduction deck and the snippet html in the extension folder.
 - If the API changes, it would be awesome to receive a parallel pull request to the gh-pages branch which updates the public-facing documentation.
 
+## Nützliche Webseiten
+
+Weitere Informationen zur Entwicklung von Webanwendungen mit Hilfe von AngularJS sind auf der [AngularJS Webseite](https://angularjs.org/) einzusehen.
+Die folgenden Seiten können besonders nützlich sein:
+
+- [Ausführliches Tutorial](https://docs.angularjs.org/tutorial)
+- [API-Referenz](https://docs.angularjs.org/api)
+- [Entwickler Guide](https://docs.angularjs.org/guide)
+- [Anwendungen auf Basis von AngularJS](https://builtwith.angularjs.org/)
+- [Blog](http://blog.angularjs.org/)
+- [FAQ](https://docs.angularjs.org/misc/faq)
+- [YouTube](https://www.youtube.com/user/angularjs)
+
+
 ## License
 
-Copyright (c) 2011-2014 Caleb Troughton
+Copyright (c) 2014 Daniel Stoll und Lisa Hanstein
 
-Licensed under the [MIT license](https://github.com/imakewebthings/deck.js/blob/master/MIT-license.txt)
-
-## Donations
-
-[![Gittip donate
-button](http://img.shields.io/gittip/imakewebthings.png)](https://www.gittip.com/imakewebthings/ "Donate weekly to this project using Gittip")
