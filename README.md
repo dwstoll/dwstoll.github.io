@@ -5,9 +5,9 @@ AngularJS Tutorial
 
 AngularJS ist ein populäres JavaScript-Framework, welches im Jahr 2009 von Google Inc. unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde. 
 
-Das AngularJS Framework wird zur Unterstützung der Entwicklung von dynamischen Webanwendungen, besonders im Bereich der Single-page Web Applications eingesetzt. 
+Das Framework wird zur Unterstützung der Entwicklung von dynamischen Webanwendungen, besonders im Bereich der Single-page Web Applications, eingesetzt. 
 
-Dabei wird der grundlegende Aufbau einer Webanwendung nach dem Model View Controller (MVC) Prinzip strukturiert. Für den Datenaustausch zwischen View und Controller wird zusetzlich ein Model View ViewModel (MVVM) implementiert. Google selbst nennt diese Architektur Model View Whatever (MVW).
+Nach AngularJS wird der grundlegende Aufbau einer Webanwendung nach dem Model View Controller (MVC) Prinzip strukturiert. Für den Datenaustausch zwischen View und Controller wird zusetzlich ein Model View ViewModel (MVVM) implementiert. Google selbst nennt diese Architektur Model View Whatever (MVW).
 
 ## Quick Start
 
