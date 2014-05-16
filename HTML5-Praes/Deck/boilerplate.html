@@ -251,14 +251,18 @@
       <pre><code>&lt;div ng-app="myApp"&gt;
           &lt;a custom-button>Click me&lt;/a&gt;
         &lt;/div&gt;</code></pre>
-      <pre><code>.directive('customButton', function () {
+      <pre><code>var myApp = angular.module('myApp', []);
+          myApp.directive('customButton', function () {
             return {
-                link: function (scope, element, attrs) {
+              restrict: 'A',
+              replace: true,
+              transclude: true,
+              template: '<a href="" class="myawesomebutton" ng-transclude>' + '<i class="icon-ok-sign"></i>' + '</a>',
+              link: function (scope, element, attrs) {
                 // DOM manipulation/events here!
-                }
-            };
-          });</code></pre>
-
+            }
+          };
+        });</code></pre>
     </section>
 
     <!-- Vor- und Nachteile -->
