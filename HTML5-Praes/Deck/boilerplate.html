@@ -247,15 +247,15 @@
 
     <!-- Direktiven 2 -->
     <section class="slide">
-      <h2>Direktiven 2</h2>
-      <pre><code>&lt;td&gt;&lt;price value="article.price" /&gt;&lt;/td&gt;</code></pre>
-      <pre><code>.directive('price', function(){
-          return {
-            ...
-            },
-          template:
-            ... 
-        )</code></pre>
+      <h2>Direktiven</h2>
+      <pre><code>&lt;a class="custom-button"&gt;Click me&lt;/a&gt;</code></pre>
+      <pre><code>.directive('customButton', function () {
+            return {
+                link: function (scope, element, attrs) {
+                // DOM manipulation/events here!
+                }
+            };
+          });</code></pre>
 
     </section>
 
