@@ -3,29 +3,7 @@ AngularJS Tutorial
 
 ## Überblick 
 
-AngularJS ist ein populäres Open Source JavaScript-Framework (Programmiersprache = JavaScript und Anwendung in JavaScript), welches im Jahr 2009 von Google Inc. unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde (aktuelle Version 1.2.16 April 2014)
 
-Das Framework dient der Unterstüztung der Softwareentwicklung von dynamischen Webanwendungen (Clientseitige Applikationen), insbesondere sogeannte Single-page Web Applications (SPA). Damit HTML besser in dynamischen Anwendungen genutzt werden kann (denn gut in statischen Anwendungen, aber schrott in dynamischen).
-
-In Angular werden HTML, CSS und JavaScript nicht wie bei vielen anderen Frameworks gekapselt, sondern um weitere Funktionalitäten erweitert. 
-
-Ursprünglich sieht Angular vor, dass eine Webabpplikation nach dem Model View Controller (MVC) Prinzip implementiert ist. Im Laufe der Zeit etablierte sich auch der Ansatz des Model View View Model (MVVM).
-In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip Model View Whatever (MVW).
-
-Ng-app: Das folgende HTML-Dokument enhält ANgular Expressions, also angular js wird verwendet. (wäre auch nur in body möglich)7
-DAnn wird noch die Bibliothek bekanntgemacht. 
-Diese zwei SChritte müssen immer gemacht werden (das ist eigentlich recht wernig). Danach kann direkt gestartet werden.
-
-Insgesamt kann die Softwareentwicklung von dynamischen Webanwendungen durch den Einsatz von AngularJS stark vereinfacht werden, denn zum einen kann der Umfang des Quellcodes stark reduziert werden. Außerdem wird der Quellcode lesbarer und somit auch verständlicher. Dies fördert die arbeitsteilige Entwicklung beispielsweise auch von Entwicklern und Designern. 
-Außerdem fördert AngularJS eine leichte Testbarkeit und ein einfaches Refactoring.
-Ein weiterer Vorteil ist, dass HTML, CSS und JavaScript nicht, wie in vielen anderen Framworks gekapselt wird, sonder nur um Funktionalitäten erweitert wird. So wird garantiert, dass weitere Bibliotheken eingebunden werden können, und ANgularJS auch in bereits bestehende Anwendungen integriert werden kann.
-Da AngularJS ein populäres Framwork ist, sind außerdem viele Dokumentationen vorhanden und außerdem ist in Fehlerfällen eine große Entwicklergemeinsschaft vorhanden.
-
-Einziger Nachteil bei komplexeren Anwendungen kann ein Performanceverlust auftreten.
-Zudem erfordert die Anwendung von AngularJS auch eine Einarbeitung. -> Manche frameworks sind einfach zu lernen
-Performanceverlust in manchen Fällen http://www.senaeh.de/angularjs
-
-Einfach über die AngularJS Website oder über GitHub das ganze downloaded und dann kann es schon beginnen. da angular nur den mit ng-app markierten Bereich verarbeitet, lässt es sich gut mit anderen Bibliotheken verbinden und auch in ältere Webanwendungen einbauen. 
 
 ## Quick Start
 
@@ -33,9 +11,19 @@ Hier dann das Grundgerüst vorstellen -> Welche Änderungen müssen im HTML-Doku
 
 This repository includes a `boilerplate.html` as a starting point, with all the extensions included. Just [download it](https://github.com/imakewebthings/deck.js/archive/latest.zip), open `boilerplate.html`, and start editing your slides.
 
-## Documentation
+## Dokumentation
 
-Check out the [documentation page](http://imakewebthings.github.com/deck.js/docs) for more information on the methods, events, and options available in core and all the included extensions.  A sample standard slide deck is included in the package under the `introduction` folder.  You can also [view that sample deck](http://imakewebthings.github.com/deck.js/introduction) online to play with the available style and transition themes.
+Weitere Informationen zur Entwicklung von Webanwendungen mit Hilfe von AngularJS sind auf der [AngularJS Webseite](https://angularjs.org/) einzusehen.
+Folgende Seiten sind besonders interessant.
+
+- [Ausführliches Tutorial](https://docs.angularjs.org/tutorial)
+- [API-Referenz](https://docs.angularjs.org/api)
+- [Entwickler Guide](https://docs.angularjs.org/guide)
+- [Anwendungen auf Basis von AngularJS](https://builtwith.angularjs.org/)
+- [Blog](http://blog.angularjs.org/)
+- [FAQ](https://docs.angularjs.org/misc/faq)
+- [YouTube](https://www.youtube.com/user/angularjs)
+
 
 ## Extensions, Themes, and Related Projects
 
