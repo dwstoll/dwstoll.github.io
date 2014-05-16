@@ -7,7 +7,9 @@ AngularJS ist ein populäres JavaScript-Framework, welches im Jahr 2009 von Goog
 
 Das Framework wird zur Unterstützung der Entwicklung von dynamischen Webanwendungen, besonders im Bereich der Single-page Web Applications, eingesetzt. 
 
-Nach AngularJS wird der grundlegende Aufbau einer Webanwendung nach dem Model View Controller (MVC) Prinzip strukturiert. Für den Datenaustausch zwischen View und Controller wird zusätzlich ein Model View ViewModel Konzept (MVVM) implementiert. Google selbst nennt diese Architektur Model View Whatever (MVW).
+Ursprünglich wurde der grundlegende Aufbau einer Webanwendung in AngularJS nach dem Model View ViewModel (MVVM) Prinzip strukturiert. 
+Im Laufe der Zeit hat sich auch das Model View ViewModel (MVVM) Konzept durchgesetzt. 
+In der Entwicklergemeinde herrschen Unstimmigkeiten zur Art des verwendeten Konzepts. Google selbst emphiehlt von der Diskussion über die Architektur Abstand zu nehmen und nennt das Ganze Model View Whatever (MVW).
 
 ## Quick Start
 
