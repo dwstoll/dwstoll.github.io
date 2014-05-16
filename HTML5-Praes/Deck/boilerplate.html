@@ -40,58 +40,49 @@
 <body>
   <div class="deck-container">
 
-    <!-- Begin slides. Just make elements with a class of slide. -->
-
+    <!-- Titelfolie -->
     <section class="slide deck-current" id="intro">
-
       <hgroup>
-				
-			<h1>AngularJS</h1>
-      
-      <p>Eine Präsentation von Daniel Stoll und Lisa Hanstein, 19. Mai 2014</p>
-      
+        <h1>AngularJS</h1>
+        <p>Eine Präsentation von Daniel Stoll und Lisa Hanstein, 19. Mai 2014</p>
       </hgroup>
-
     </section>
 
+    <!-- Agenda -->
     <section class="slide">
-     <h2>Agenda</h2>
-     <ol>
-       <li>
+      <h2>Agenda</h2>
+      <ol>
+        <li>
           <p>Einführung</p>
-       </li>
-       <li>
+        </li>
+        <li>
           <p>Grundgerüst</p>
-       </li>
-       <li>
+        </li>
+        <li>
           <p>Wichtige Konzepte</p>
-- Zweidimensionale Datenbindung <br/> <br />
-
-- Dependency Injection <br/> <br />
-
-- Direktiven <br/> <br /> 
-       </li>
-       <li>
+          - Zweidimensionale Datenbindung <br/> <br />
+          - Dependency Injection <br/> <br />
+          - Direktiven <br/> <br /> 
+        </li>
+        <li>
           <p>Vor- und Nachteile</p>
-       </li>
-       <li>
+        </li>
+        <li>
           <p>Fazit</p>
-       </li>
+        </li>
       </ol>
-      
-
     </section>
 
-  <section class="slide">
-   <h2>Einführung in AngularJS</h2>
-   <ul>
-     <li><p>Populäres Open Source JavaScript-Framework</p></li>
-     <li><p>Von Google Inc. (2009, MIT-Lizenz)</p></li>
-     <li><p>Unterstützung der Softwareentwicklung von dynamischen Webanwendungen</p></li>
-     <li><p>Nach dem Model View Whatever (MVW) Modell</p></li>
-   </ul>
-
-  </section>
+    <!-- Einführung -->
+    <section class="slide">
+      <h2>Einführung in AngularJS</h2>
+      <ul>
+        <li><p>Populäres Open Source JavaScript-Framework</p></li>
+        <li><p>Von Google Inc. (2009, MIT-Lizenz)</p></li>
+        <li><p>Unterstützung der Softwareentwicklung von dynamischen Webanwendungen</p></li>
+        <li><p>Nach dem Model View Whatever (MVW) Modell</p></li>
+      </ul>
+    </section>
 
 
 
@@ -240,34 +231,35 @@
 
     </section>
 	
-		
+		<!-- Direktiven -->
     <section class="slide">
       <h2>Direktiven</h2>
-
-<pre><code>.directive('price', function(){
-  return {
-    restrict: 'E',
-    scope: {
-      value: '='
-    },
-    template: '<span ng-show="value == 0">kostenlos</span>' +
-      '<span ng-show="value > 0">{{value | currency}}</span>'
-  }
-})</code></pre>
+      <pre><code>.directive('price', function(){
+        return {
+          restrict: 'E',
+          scope: {
+             value: '='
+          },
+        template: '<span ng-show="value == 0">kostenlos</span>' +
+        '<span ng-show="value > 0">{{value | currency}}</span>'
+        }
+        })</code></pre>
     </section>
 
+    <!-- Vor- und Nachteile -->
     <section class="slide">
-     <h2>Vor- und Nachteile</h2>
-<p>+ Bessere Verständlichkeit</p>
-<p>+ Leichte Testbarkeit</p>
-<p>+ Einfaches Refactoring</p>
-<p>+ Gute Kompatibilität</p>
-<p>+ Große Entwicklergemeinschaft</p>
-<p>- Performanceverlust möglich</p>
-<p>- Einarbeitung nötig</p>
+      <h2>Vor- und Nachteile</h2>
+      <p>+ Bessere Verständlichkeit</p>
+      <p>+ Leichte Testbarkeit</p>
+      <p>+ Einfaches Refactoring</p>
+      <p>+ Gute Kompatibilität</p>
+      <p>+ Große Entwicklergemeinschaft</p>
+      <p>- Performanceverlust möglich</p>
+      <p>- Einarbeitung nötig</p>
     </section>
 
-   <section class="slide">
+    <!-- Abschlussfolie -->
+    <section class="slide">
       <h1>Danke</h1>
     </section>
 
