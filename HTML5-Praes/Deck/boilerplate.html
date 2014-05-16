@@ -238,9 +238,9 @@
         <li><p>AngularJS-spezifische Erweiterungen von HTML</p></li>
         <li><p>Trennung von Aussehen und Verhalten</p></li>
         <li><p>AngularJS stellt einige Direktiven bereit</p></li>
-          - ng-app <br/> <br />
-          - ng-repeat <br/> <br />
-          - ... <br/> <br /> 
+          - ng-app <br/> <br/>
+          - ng-repeat <br/> <br/>
+          - ... <br/> <br/> 
         <li><p>Anwender kann eigene Direktiven einführen</p></li>
       </ul>
     </section>
@@ -248,9 +248,7 @@
     <!-- Direktiven 2 -->
     <section class="slide">
       <h2>Direktiven</h2>
-      <pre><code>&lt;div ng-app="myApp"&gt;
-          &lt;a custom-button>Click me&lt;/a&gt;
-        &lt;/div&gt;</code></pre>
+      <pre><code>&lt;div ng-app="myApp"&gt;<br/>   &lt;a custom-button>Click me&lt;/a&gt;<br/>&lt;/div&gt;</code></pre>
       <pre><code>var myApp = angular.module('myApp', []);
           myApp.directive('customButton', function () {
             return {
