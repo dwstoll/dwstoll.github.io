@@ -30,6 +30,11 @@ Zum anderen wird der Ausdruck `ng-app` in dem Bereich hinzugefügt, in dem Angul
 
 ### Direktiven
 
+Mit Hilfe von sogenannten Direktiven kann der HTML-Sprachumfang AngularJS-spezifisch erweitert werden. Eine Direktive ist eine Markierung an einem DOM-Element, die der angular.js-Anwendung anweist ein bestimmtes Verhalten an das Element anzuhängen oder das Element selbst zu verändern. 
+AngularJS stellt einige vordefinierte Direktiven, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`,bereits zur Verfügung. 
+Zudem können individuelle Direktiven definiert werden. 
+Eine Direktive wird mit dem Keyword `directive`erstellt. Der Direktive werden als Parameter ein Name und eine Funktion übergeben. Diese Funktion gibt ein Objekt zurück, mit dem die Direktive konfiguriert werden kann.
+
 ## Nützliche Webseiten
 
 Weitere Informationen zur Entwicklung von Webanwendungen mit Hilfe von AngularJS sind auf der [AngularJS Webseite](https://angularjs.org/) einzusehen.
