@@ -13,7 +13,7 @@ Nach AngularJS wird der grundlegende Aufbau einer Webanwendung nach dem Model Vi
 
 ### Grundgerüst
 
-Um eine einfache Webanwendung mit AngularJS zu entwickeln bedarf es zwei kleine Änderungen an den beteiligten HTML-Dateien, wie im [Grundgerüst Code-Beispiel](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/Grundgeruest.html) verdeutlicht. 
+Um eine einfache Webanwendung mit AngularJS zu entwickeln muss eine beteiligte HTML-Datei, wie im [Grundgerüst Code-Beispiel](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/Grundgeruest.html) verdeutlicht, um zwei Ausdrücke erweitert werden. 
 
 Zum einen muss die `angular.js`-Datei in das HTML-Dokument eingebunden werden. 
 Man kann entweder die Online-Version verwenden, die Google über ihr CDN verteilt oder die Datei von [angularjs.org](angularjs.org) herunterladen und lokal einbinden. 
