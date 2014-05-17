@@ -69,8 +69,8 @@ Durch die Verfolgung des Dependency Injection Ansatzes wird eine bessere Testbar
 ### Direktiven
 
 Mit Hilfe von sogenannten Direktiven wird der HTML-Sprachumfang AngularJS-spezifisch erweitert. 
-In einer Direktive wird ein bestimmtes Verhalten an einem DOM-Element oder eine Veränderung des Elements selbst definiert.
-Diese Direktive kann dann einem DOM-Element zugeordnet werden. Die angular.js-Anwendung führt dann das in der Direktive definierte Verhalten oder Änderung an diesem Element durch, ohne dass im HTML-Dokument eine Code-Zeile geschrieben werden muss. Die Verwendung von Direktiven erlaubt so die komplexe DOM-Struktur, CSS und Verhalten zu verbergen und den Fokus auf das, was die Anwendung tut zu stellen oder wie die Anwendung aussehen soll. 
+In einer Direktive ist ein bestimmtes Verhalten oder eine Zustandsänderung definiert.
+Eine Direktive kann einem DOM-Element innerhalb eines HTML-Dokuments zugeordnet werden. Die angular.js-Anwendung führt dann das, in der Direktive definierte, Verhalten beziehungsweise die Änderung an diesem Element durch, ohne dass im HTML-Dokument eine Code-Zeile geschrieben werden muss. 
 
 AngularJS stellt einige vordefinierte Direktiven, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. 
 
