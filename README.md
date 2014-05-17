@@ -70,6 +70,7 @@ Mit Hilfe von sogenannten Direktiven wird der HTML-Sprachumfang um eine **Angula
 Eine Direktive ist eine wiederverwendbare Komponente. In ihr ist ein bestimmtes Verhalten oder eine Zustandsänderung eines DOM-Elements implementiert. Innerhalb eines HTML-Dokuments kann eine Direktive einem DOM-Element zugeordnet werden. Die angular.js-Anwendung führt dann das, in der Direktive definierte, Verhalten beziehungsweise die Änderung an diesem Element durch.
 
 AngularJS stellt einige **vordefinierte Direktiven** mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. Zudem können **individuelle Direktiven** definiert werden. 
+AngularJS stellt einige **vordefinierte Direktiven**, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. Zudem können **individuelle Direktiven** definiert werden.
 Eine Direktive wird mit dem Keyword `directive` erstellt. 
 
 ## Nützliche Webseiten
