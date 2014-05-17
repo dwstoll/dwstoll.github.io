@@ -36,7 +36,6 @@ Mit AngularJS ist eine einfachere Umsetzung, wie im Code-Beispiel dargestellt, m
 
 Wie in Abbildung X dargestellt, ermöglicht AngularJS eine zweidimensionale Datenbindung, in dem Änderungen am Model, in diesem Fall am Input-Feld, automatisch an den View, in diesem Beispiel die Expression im h1-Tag, weitergeleitet werden. Eine Änderung am h1-Tag würde auch im umgekehrten Fall zu einer Aktualisierung des Models führen. Folglich liegt ein Kreislauf vor.
 
-
 Anhand eines weiteren Beispiels wird erläutert, wie die zweidimensionale Datenbindung bei komplexeren Vorhaben, bei denen unter anderem Controller beteiligt sind, realisiert wird. Im Beispiel ist wiederum ein Eingabefeld vorhanden. Unter diesem befindet sich eine Liste mit Vor- und Nachnamen und weiteren Details zu einer Person, wie diese zum Beispiel in einem Adressbuch vorhanden sind. Es soll ermöglicht werden, dass ein Benutzer in das Eingabefeld einen Vor- oder Nachnamen eingeben kann und nur noch die Adressbucheinträge angezeigt werden, die auf die Eingabe zutreffen.
 
 Zunächst wird die JavaScript-Datei HauptController.JS angelegt, in dem sich der Code für den Controller und das Model befindet. In AngularJS kann ein Controller durch eine JavaScript-Funktion definiert werden. Demzufolge stellt die Funktion AdressbuchController den Controller dar. Diese haben immer jeweils $scope als Funktionsparameter, welcher der Funktion übergeben wird. $scope stellt ein Objekt dar, welches eine zweidimensionale Datenbindung ermöglicht, da auf dieses neben dem Controller auch der View zugreifen kann. 
@@ -61,14 +60,17 @@ Bei eigens definierten Objekten hingegen kann der Programmierer zentral über so
 
 Durch die Verfolgung des Dependency Injection Ansatzes wird eine bessere Testbarkeit erreicht, indem die reine Funktionalität von Funktionen, unabhängig von der Instanziierung von anderen Objekten, getestet werden kann, in dem den Funktionen bereits instanziierte Testobjekte übergeben werden.  
 
-
-
 ### Direktiven
 
-Mit Hilfe von sogenannten Direktiven kann der HTML-Sprachumfang AngularJS-spezifisch erweitert werden. Eine Direktive ist eine Markierung an einem DOM-Element, die der angular.js-Anwendung anweist ein bestimmtes Verhalten an das Element anzuhängen oder das Element selbst zu verändern. 
-AngularJS stellt einige vordefinierte Direktiven, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`,bereits zur Verfügung. 
-Zudem können individuelle Direktiven definiert werden. 
-Eine Direktive wird mit dem Keyword `directive`erstellt. Der Direktive werden als Parameter ein Name und eine Funktion übergeben. Diese Funktion gibt ein Objekt zurück, mit dem die Direktive konfiguriert werden kann.
+Mit Hilfe von sogenannten Direktiven wird der HTML-Sprachumfang AngularJS-spezifisch erweitert. 
+
+Eine Direktive ist eine Markierung an einem DOM-Element, die der angular.js-Anwendung anweist ein bestimmtes Verhalten an das Element anzuhängen oder das Element selbst zu verändern. 
+Eine Direktive erlaubt die komplexe DOM-Struktur, CSS und Verhalten zu verbergen und den Fokus auf das, was die Anwendung tut zu stellen oder wie die Anwendung aussehen soll. So kann die Verwendung von Direktiven helfen, große Teile einer Applikation ohne eine Zeile Code zu schreiben.
+
+AngularJS stellt einige vordefinierte Direktiven, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. 
+
+Zudem können individuelle Direktiven definiert werden. Diese können dann innerhalb der Webanwendung als eigenständige Komponenten wiederverwendet werden.
+Eine Direktive wird mit dem Keyword `directive` erstellt. Der Direktive werden als Parameter ein Name und eine Funktion übergeben. Diese Funktion gibt ein Objekt zurück, mit dem die Direktive konfiguriert werden kann.
 
 ## Nützliche Webseiten
 
