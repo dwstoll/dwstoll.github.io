@@ -3,13 +3,13 @@ AngularJS Tutorial
 
 ## Einführung 
 
-AngularJS ist ein populäres JavaScript-Framework, welches im Jahr 2009 von Google Inc. unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde. 
+AngularJS ist ein populäres **JavaScript-Framework**, welches im Jahr 2009 von **Google Inc.** unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde. 
 
-Das Framework wird zur Unterstützung der Entwicklung von dynamischen Webanwendungen, besonders im Bereich der Single-page Web Applications, eingesetzt. 
+Das Framework wird zur Unterstützung der Entwicklung von **dynamischen Webanwendungen**, besonders im Bereich der Single-page Web Applications, eingesetzt. 
 
 Ursprünglich wurde der grundlegende Aufbau einer Webanwendung in AngularJS nach dem Model View ViewModel (MVVM) Prinzip strukturiert. 
 Im Laufe der Zeit hat sich auch das Model View ViewModel (MVVM) Konzept durchgesetzt. 
-In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip Model View Whatever (MVW).
+In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip **Model View Whatever** (MVW).
 
 Durch die Verwendung des AngularJS-Frameworks kann eine Webanwendung übersichtlicher lesbarer und übersichtlicher gestaltet werden. Ein weiterer Vorteil ist die Kompatibilität mit anderen JavaScript-Bibliotheken und eine große Entwicklergemeinschaft. Auch kann das Testen und Refactoring mit AngularJS vereinfacht werden. 
 
@@ -17,7 +17,7 @@ Durch die Verwendung des AngularJS-Frameworks kann eine Webanwendung übersichtl
 
 ### Grundgerüst
 
-Um eine einfache Webanwendung mit AngularJS zu entwickeln muss die beteiligte HTML-Datei, wie im [Code-Beispiel](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/Grundgeruest.html) verdeutlicht, um zwei Ausdrücke erweitert werden. 
+Um eine einfache Webanwendung mit AngularJS zu entwickeln muss die beteiligte HTML-Datei, wie im [Code-Beispiel](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/Grundgeruest.html) verdeutlicht, um **zwei Ausdrücke erweitert** werden. 
 
 Zum einen muss die `angular.js`-Datei in das `<HEAD>-Element` der HTML-Datei eingebunden werden. Dies kann direkt über den Verweis auf die Online-Version von Google per `</script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js">;` durchgeführt werden. Es ist außerdem möglich, die entsprechende Datei von [angularjs.org](angularjs.org) herunterzuladen und lokal einzubinden.
 
@@ -36,7 +36,10 @@ Dieses Vorhaben lässt sich unter anderem auch mit **reinem JavaScript** umsetze
 
 Wie in Abbildung X dargestellt, ermöglicht AngularJS eine **zweidimensionale Datenbindung**, in dem Änderungen am Model, in diesem Fall am Input-Feld, automatisch an den View, in diesem Beispiel die Expression im `h1-Tag`, weitergeleitet werden. Eine Änderung am `h1-Tag` würde auch im umgekehrten Fall zu einer Aktualisierung des Models führen. Folglich liegt ein **Kreislauf** vor.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> FETCH_HEAD
 Anhand eines **weiteren Beispiels** wird erläutert, wie die zweidimensionale Datenbindung bei komplexeren Vorhaben, bei denen unter anderem **Controller** beteiligt sind, realisiert wird. Im [Beispiel](http://dwstoll.github.io/Codebeispiele/Adressbuch.html) ist wiederum ein Eingabefeld vorhanden. Unter diesem befindet sich eine Liste mit Vor- und Nachnamen und weiteren Details zu verschiedenen Personen. Somit stellt dies eine Art Adressbuch dar. Es soll ermöglicht werden, dass ein Benutzer in das Eingabefeld einen Vor- oder Nachnamen eingeben kann und nur noch die Adressbucheinträge angezeigt werden, die auf die Eingabe zutreffen.
 
 Zunächst wird die JavaScript-Datei [HauptController.JS](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/HauptController.js) angelegt, in dem sich der Code für den Controller und das Model befindet. In AngularJS wird ein **Controller** durch eine **JavaScript-Funktion** definiert. Demzufolge stellt die Funktion AdressbuchController den Controller dar. Jeder Controller hat jeweils `$scope` als Funktionsparameter, welcher der Funktion übergeben wird. $scope stellt ein **Objekt** dar, welches eine **zweidimensionale Datenbindung** ermöglicht, da auf dieses Objekt neben dem Controller auch der View zugreifen kann. 
@@ -63,13 +66,13 @@ Durch die Verfolgung des Dependency Injection Ansatzes wird eine bessere Testbar
 
 ### Direktiven
 
-Mit Hilfe von sogenannten Direktiven wird der HTML-Sprachumfang um eine AngularJS-spezifische Syntax erweitert. 
+Mit Hilfe von sogenannten Direktiven wird der HTML-Sprachumfang um eine **AngularJS-spezifische Syntax erweitert**.
 Eine Direktive ist eine wiederverwendbare Komponente. In ihr ist ein bestimmtes Verhalten oder eine Zustandsänderung eines DOM-Elements implementiert. Innerhalb eines HTML-Dokuments kann eine Direktive einem DOM-Element zugeordnet werden. Die angular.js-Anwendung führt dann das, in der Direktive definierte, Verhalten beziehungsweise die Änderung an diesem Element durch.
 
-AngularJS stellt einige vordefinierte Direktiven, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. 
+AngularJS stellt einige **vordefinierte Direktiven**, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. 
 
-Zudem können individuelle Direktiven definiert werden. Diese können dann innerhalb der Webanwendung als eigenständige Komponenten wiederverwendet werden.
-Eine Direktive wird mit dem Keyword `directive` erstellt. Der Direktive werden als Parameter ein Name und eine Funktion übergeben. Diese Funktion gibt ein Objekt zurück, mit dem die Direktive konfiguriert werden kann.
+Zudem können **individuelle Direktiven** definiert werden. 
+Eine Direktive wird mit dem Keyword `directive` erstellt. 
 
 ## Nützliche Webseiten
 
