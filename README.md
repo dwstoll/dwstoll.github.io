@@ -7,7 +7,7 @@ AngularJS ist ein populäres **JavaScript-Framework**, welches im Jahr 2009 von 
 
 Das Framework wird zur Unterstützung der Entwicklung von **dynamischen Webanwendungen**, besonders im Bereich der Single-page Web Applications, eingesetzt. 
 
-Ursprünglich wurde der grundlegende Aufbau einer Webanwendung in AngularJS nach dem Model View ViewModel (MVVM) Prinzip strukturiert. 
+Ursprünglich wurde der grundlegende Aufbau einer Webanwendung in AngularJS nach dem Model View Controller (MVC) Prinzip strukturiert. 
 Im Laufe der Zeit hat sich auch das Model View ViewModel (MVVM) Konzept durchgesetzt. 
 In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip **Model View Whatever** (MVW).
 
@@ -22,7 +22,7 @@ Um eine einfache Webanwendung mit AngularJS zu entwickeln muss die beteiligte HT
 Zum einen muss die `angular.js`-Datei in das `<HEAD>-Element` der HTML-Datei eingebunden werden. Dies kann direkt über den Verweis auf die Online-Version von Google per `</script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js">;` durchgeführt werden. Es ist außerdem möglich, die entsprechende Datei von [angularjs.org](angularjs.org) herunterzuladen und lokal einzubinden.
 
 Zum anderen wird der Ausdruck `ng-app` in dem Bereich hinzugefügt, in dem AngularJS verwendet werden soll. 
-`ng-app` gehört bei einer reinen AngularJS-Applikation in das `<html>-Tag`. Wenn einzelne Seiten einer bestehenden Applikation erweitert werden sollen kann die Bekanntmachung auch in einem anderen Element erfolgen. Dann wandelt AngularJS nur den ausgewählten Bereich in eine AngularWebanwendung um. `angular.js` durchsucht den, in der HTML-Seite per `ng-app` definierten Bereich, nach speziellen Tags und Attributen, die zum Framework gehören.
+`ng-app` gehört bei einer reinen AngularJS-Applikation in das `<html>-Tag`. Wenn einzelne Seiten einer bestehenden Applikation erweitert werden sollen kann die Bekanntmachung auch in einem anderen Element erfolgen. Dann wandelt AngularJS nur den ausgewählten Bereich in eine AngularWebanwendung um. `Angular.js` durchsucht den, in der HTML-Seite per `ng-app` definierten Bereich, nach speziellen Tags und Attributen, die zum Framework gehören.
 
 ### Zweidimensionale Datenbindung
 
