@@ -36,12 +36,6 @@ Dieses Vorhaben lässt sich unter anderem auch mit **reinem JavaScript** umsetze
 
 Wie in Abbildung X dargestellt, ermöglicht AngularJS eine **zweidimensionale Datenbindung**, in dem Änderungen am Model, in diesem Fall am Input-Feld, automatisch an den View, in diesem Beispiel die Expression im `h1-Tag`, weitergeleitet werden. Eine Änderung am `h1-Tag` würde auch im umgekehrten Fall zu einer Aktualisierung des Models führen. Folglich liegt ein **Kreislauf** vor.
 
-<<<<<<< HEAD
-Anhand eines weiteren Beispiels wird erläutert, wie die zweidimensionale Datenbindung bei komplexeren Vorhaben, bei denen unter anderem Controller beteiligt sind, realisiert wird. Im Beispiel ist wiederum ein Eingabefeld vorhanden. Unter diesem befindet sich eine Liste mit Vor- und Nachnamen und weiteren Details zu einer Person, wie diese zum Beispiel in einem Adressbuch vorhanden sind. Es soll ermöglicht werden, dass ein Benutzer in das Eingabefeld einen Vor- oder Nachnamen eingeben kann und nur noch die Adressbucheinträge angezeigt werden, die auf die Eingabe zutreffen.
-=======
-
->>>>>>> 86496f83c16bcc6c2039aa285542d53a79d426e0
-
 Anhand eines **weiteren Beispiels** wird erläutert, wie die zweidimensionale Datenbindung bei komplexeren Vorhaben, bei denen unter anderem **Controller** beteiligt sind, realisiert wird. Im [Beispiel](http://dwstoll.github.io/Codebeispiele/Adressbuch.html) ist wiederum ein Eingabefeld vorhanden. Unter diesem befindet sich eine Liste mit Vor- und Nachnamen und weiteren Details zu verschiedenen Personen. Somit stellt dies eine Art Adressbuch dar. Es soll ermöglicht werden, dass ein Benutzer in das Eingabefeld einen Vor- oder Nachnamen eingeben kann und nur noch die Adressbucheinträge angezeigt werden, die auf die Eingabe zutreffen.
 
 Zunächst wird die JavaScript-Datei [HauptController.JS](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/HauptController.js) angelegt, in dem sich der Code für den Controller und das Model befindet. In AngularJS wird ein **Controller** durch eine **JavaScript-Funktion** definiert. Demzufolge stellt die Funktion AdressbuchController den Controller dar. Jeder Controller hat jeweils `$scope`als Funktionsparameter, welcher der Funktion übergeben wird. $scope stellt ein **Objekt** dar, welches eine **zweidimensionale Datenbindung** ermöglicht, da auf dieses Objekt neben dem Controller auch der View zugreifen kann. 
@@ -73,8 +67,8 @@ Eine Direktive ist eine wiederverwendbare Komponente. In ihr ist ein bestimmtes 
 
 AngularJS stellt einige vordefinierte Direktiven, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. 
 
-Zudem können individuelle Direktiven definiert werden. Diese können dann innerhalb der Webanwendung als eigenständige Komponenten wiederverwendet werden.
-Eine Direktive wird mit dem Keyword `directive` erstellt. Der Direktive werden als Parameter ein Name und eine Funktion übergeben. Diese Funktion gibt ein Objekt zurück, mit dem die Direktive konfiguriert werden kann.
+Zudem können individuelle Direktiven definiert werden. 
+Eine Direktive wird mit dem Keyword `directive` erstellt. 
 
 ## Nützliche Webseiten
 
