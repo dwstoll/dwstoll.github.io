@@ -3,13 +3,13 @@ AngularJS Tutorial
 
 ## Einführung 
 
-AngularJS ist ein populäres JavaScript-Framework, welches im Jahr 2009 von Google Inc. unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde. 
+AngularJS ist ein populäres **JavaScript-Framework**, welches im Jahr 2009 von **Google Inc.** unter der MIT-Lizenz veröffentlicht und zur kostenlosen Nutzung bereitgestellt wurde. 
 
-Das Framework wird zur Unterstützung der Entwicklung von dynamischen Webanwendungen, besonders im Bereich der Single-page Web Applications, eingesetzt. 
+Das Framework wird zur Unterstützung der Entwicklung von **dynamischen Webanwendungen**, besonders im Bereich der Single-page Web Applications, eingesetzt. 
 
 Ursprünglich wurde der grundlegende Aufbau einer Webanwendung in AngularJS nach dem Model View ViewModel (MVVM) Prinzip strukturiert. 
 Im Laufe der Zeit hat sich auch das Model View ViewModel (MVVM) Konzept durchgesetzt. 
-In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip Model View Whatever (MVW).
+In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip **Model View Whatever** (MVW).
 
 Durch die Verwendung des AngularJS-Frameworks kann eine Webanwendung übersichtlicher lesbarer und übersichtlicher gestaltet werden. Ein weiterer Vorteil ist die Kompatibilität mit anderen JavaScript-Bibliotheken und eine große Entwicklergemeinschaft. Auch kann das Testen und Refactoring mit AngularJS vereinfacht werden. 
 
@@ -17,7 +17,7 @@ Durch die Verwendung des AngularJS-Frameworks kann eine Webanwendung übersichtl
 
 ### Grundgerüst
 
-Um eine einfache Webanwendung mit AngularJS zu entwickeln muss die beteiligte HTML-Datei, wie im [Code-Beispiel](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/Grundgeruest.html) verdeutlicht, um zwei Ausdrücke erweitert werden. 
+Um eine einfache Webanwendung mit AngularJS zu entwickeln muss die beteiligte HTML-Datei, wie im [Code-Beispiel](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/Grundgeruest.html) verdeutlicht, um **zwei Ausdrücke erweitert** werden. 
 
 Zum einen muss die `angular.js`-Datei in das `<HEAD>-Element` der HTML-Datei eingebunden werden. Dies kann direkt über den Verweis auf die Online-Version von Google per `</script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js">;` durchgeführt werden. Es ist außerdem möglich, die entsprechende Datei von [angularjs.org](angularjs.org) heruntzuladen und lokal einzubinden.
 
@@ -62,12 +62,12 @@ Durch die Verfolgung des Dependency Injection Ansatzes wird eine bessere Testbar
 
 ### Direktiven
 
-Mit Hilfe von sogenannten Direktiven wird der HTML-Sprachumfang um eine AngularJS-spezifische Syntax erweitert. 
+Mit Hilfe von sogenannten Direktiven wird der HTML-Sprachumfang um eine **AngularJS-spezifische Syntax erweitert**.
 Eine Direktive ist eine wiederverwendbare Komponente. In ihr ist ein bestimmtes Verhalten oder eine Zustandsänderung eines DOM-Elements implementiert. Innerhalb eines HTML-Dokuments kann eine Direktive einem DOM-Element zugeordnet werden. Die angular.js-Anwendung führt dann das, in der Direktive definierte, Verhalten beziehungsweise die Änderung an diesem Element durch.
 
-AngularJS stellt einige vordefinierte Direktiven, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. 
+AngularJS stellt einige **vordefinierte Direktiven**, mit dem Präfix `ng`, wie beispielsweise `ng-app` oder `ng-repeat`, bereits zur Verfügung. 
 
-Zudem können individuelle Direktiven definiert werden. 
+Zudem können **individuelle Direktiven** definiert werden. 
 Eine Direktive wird mit dem Keyword `directive` erstellt. 
 
 ## Nützliche Webseiten
