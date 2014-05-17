@@ -86,7 +86,7 @@
 
 
 
-  <section class="slide" id="datenbindung2"> 
+  <section class="slide" > 
          <h2>Grundgerüst - Der generelle Aufbau</h2> 
             <pre><code>&lt;!DOCTYPE html&gt; <strong>&lt;html ng-app&gt</strong>;
   &lt;head&gt; 
@@ -104,7 +104,7 @@
 
 
  
-    <section class="slide" id="datenbindung">
+    <section class="slide" >
  
          <h2>Zweidimensionale Datendbindung</h2>
 		 <h4>Beispiel</h4>
@@ -114,7 +114,7 @@
       
       <p>Herzlich Willkommen {{deinName}} </p>
 
-	  <div class="slide" id="datenbindung-eins">
+	  <div class="slide" >
 	  <h4>HTML-Dokument - Body</h4>
 	        <pre><code>&lt;body&gt;
       &lt;label&gt;Name:&lt;/label&gt;
@@ -127,9 +127,9 @@
 
 	
 	
-	    <section class="slide" id="datenbindung2">
+	    <section class="slide">
          <h2>Zweidimensionale Datenbindung</h2>
-		 <h4>Mit AngularJS:</h4>
+		 <h4>Mit AngularJS - Body HTML-Dokument:</h4>
 	      	        <pre><code>&lt;body&gt;
       &lt;label&gt;Name:&lt;/label&gt;
       &lt;input type="text" <strong>ng-model=&quotdeinName&quot</strong> placeholder="Name eingeben"&gt;
@@ -137,20 +137,24 @@
       &lt;h1&gt;Herzlich Willkommen <strong> &#123; &#123; deinName &#125; &#125;  </strong> &lt;/h1&gt;
 
 &lt;/body&gt;</code></pre>
-<p>Zweidimensionale Datenbindung zwischen <strong>Eingabefeld (Model)</strong> mittels Angular-Attribut <strong>ng-model</strong> und <br /><strong>H1-Tag (View)</strong> mittels <strong>Expression</strong>
+<p>Zweidimensionale Datenbindung zwischen 
+<ul>
+<li><strong>Eingabefeld (Model)</strong> mittels Angular-Attribut <strong>ng-model</strong> </li>
+<li><strong>H1-Tag (View)</strong> mittels <strong>Expression</strong></li>
+</ul>
 	 
     </section>
 	
 	
 	
-	<section class="slide" id="datenbindung3">
+	<section class="slide" id=>
      <h2>Zweidimensionale Datenbindung</h2>
-	 <p><strong>Funktionsweise zweidimensionale Datenbindung</strong></p>
+	 <h4>Funktionsweise zweidimensionale Datenbindung</h4>
       <img src="data-binding.png" alt="Datenbindung">
     </section>
 	
 	
-		<section class="slide" id="datenbindung4" ng-controller="AdressbuchController">
+		<section class="slide"  ng-controller="AdressbuchController">
      <h2>Zweidimensionale Datenbindung</h2>
 	 <h4>Beispiel: Zweidimensionale Datenbindung mit MVC</h4>
        <label >Vor- oder Nachnamen eingeben:</label>
@@ -165,7 +169,7 @@
     </section>
 	
 	
-	  <section class="slide" id="datenbindung5">
+	  <section class="slide" >
          <h2>Zweidimensionale Datenbindung</h2>
 		 <h4>Controller- und Model-Code in externen JavaScript-Datei: HauptController.JS</h4>
 	      	        <pre><code>function AdressbuchController (<strong>$scope</strong>) {	
@@ -184,7 +188,7 @@
 	
 	
 	
-		  <section class="slide" id="datenbindung6">
+		  <section class="slide" >
          <h2>Zweidimensionale Datenbindung</h2>
 		 <h4>Body des HTML-Dokuments (View)</h4>
 	      	        <pre><code>&lt;body <strong>ng-controller=“AdressbuchController&quot;</strong>&gt;
@@ -209,19 +213,19 @@
 	
 
     	
-	<section class="slide" id="dependencyinjection">
+	<section class="slide" >
      <h2>Dependency Injection</h2>
 	 <p>Objekte sind wiederum von <strong>anderen Objekten abhängig</strong></p>
 	 <p>Möglichkeiten zur Instanziierung von Objekten und Definition von <strong>Abhängigkeiten</strong> </strong></p>
-         <div class="slide" id="dependencyinjection-eins">
+         <div class="slide" >
 	 <ol>
-		<li><strong>Innerhalb</strong> einer  <strong>Funktion</strong> über new-Parameter: Beispiel <strong>Adressbuch-Objekt</strong> (Problem: Testen: Unabhängigkeit ... eigene Testobjekte)</li>
+		<li><strong>Innerhalb</strong> einer  <strong>Funktion</strong> über new-Parameter: Beispiel <strong>Adressbuch-Objekt</strong></li>
 			<pre><code>function sucheAdressbuch(benutzer){
 	<strong>var db = new Database(...);</strong>
 	db.suche(benutzer);
 } </code></pre>
 </div>		
-		<div class="slide" id="dependencyinjection-zwei">
+		<div class="slide" >
 		<li><strong>Außerhalb</strong> einer <strong>Funktion</strong>: Objekt als <strong>Übergabeparameter</strong></li>
 	 <pre><code>function sucheAdressbuch(<strong>db</strong>,benutzer){
 	<strong>db</strong>.suche(benutzer);

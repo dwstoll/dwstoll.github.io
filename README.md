@@ -26,7 +26,42 @@ Zum anderen wird der Ausdruck `ng-app` in dem Bereich hinzugefügt, in dem Angul
 
 ### Zweidimensionale Datenbindung
 
+Im Folgenden wird das Konzept der zweidimensionalen Datenbindung anhand von zwei Beispielen erklärt. 
+
+Im ersten Beispiel ist ein einfaches Text-Eingabefeld dargestellt. Wenn ein Benutzer Eingaben in diesem Feld vornimmt, sollen diese Änderungen unmittelbar ohne Neuladen der Webseite an einer anderen Stelle auf der Webseite angezeigt werden. 
+
+Dieses Vorhaben lässt sich unter anderem auch mit reinem JavaScript umsetzen. Dies ist jedoch sehr aufwendig, da hierfür Event-Handler programmiert werden müssen, die auf Änderungen des Eingabefeldes reagiren. Zusätzlich muss sich der Programmierer um die Aktualisierung des DOM-Baumes kümmern.
+
+Mit AngularJS ist eine einfachere Umsetzung, wie im Code-Beispiel dargestellt, möglich. Hierzu muss das Eingabefeld um das AngularJS-Attribut ng-model und einem entsprechenden Namen erweitert werden. Die Erweiterung des input-Feldes sorgt dafür, dass das Eingabefeld als Model agiert und automatisch Änderungen an diesem überwacht werden. Eine Ausgabe des aktuellen Inhaltes des Model-Feldes an einer anderen Stelle auf der HTML-Seite erfolgt über den Model-Namen, der in geschweiften Klammern geschrieben wird und somit eine AngularJS-Expression darstellt. 
+
+Wie in Abbildung X dargestellt, ermöglicht AngularJS eine zweidimensionale Datenbindung, in dem Änderungen am Model, in diesem Fall am Input-Feld, automatisch an den View, in diesem Beispiel die Expression im h1-Tag, weitergeleitet werden. Eine Änderung am h1-Tag würde auch im umgekehrten Fall zu einer Aktualisierung des Models führen. Folglich liegt ein Kreislauf vor.
+
+
+Anhand eines weiteren Beispiels wird erläutert, wie die zweidimensionale Datenbindung bei komplexeren Vorhaben, bei denen unter anderem Controller beteiligt sind, realisiert wird. Im Beispiel ist wiederum ein Eingabefeld vorhanden. Unter diesem befindet sich eine Liste mit Vor- und Nachnamen und weiteren Details zu einer Person, wie diese zum Beispiel in einem Adressbuch vorhanden sind. Es soll ermöglicht werden, dass ein Benutzer in das Eingabefeld einen Vor- oder Nachnamen eingeben kann und nur noch die Adressbucheinträge angezeigt werden, die auf die Eingabe zutreffen.
+
+Zunächst wird die JavaScript-Datei HauptController.JS angelegt, in dem sich der Code für den Controller und das Model befindet. In AngularJS kann ein Controller durch eine JavaScript-Funktion definiert werden. Demzufolge stellt die Funktion AdressbuchController den Controller dar. Diese haben immer jeweils $scope als Funktionsparameter, welcher der Funktion übergeben wird. $scope stellt ein Objekt dar, welches eine zweidimensionale Datenbindung ermöglicht, da auf dieses neben dem Controller auch der View zugreifen kann. 
+
+Es ist möglich, im $scope-Objekt Variablen abzuspeichern, auf die sowohl der Controller als auch der View zugreifen können. Demzufolge werden die Adressbuchdaten, folglich unser Model, als Variable des $scope-Objekts, §scope.benutzer, definiert. Dabei besteht $scope.benutzer aus einem Array von Objekten, wobei ein Objekt jeweils eine Person repräsentiert. 
+
+In der HTML-Datei, die nach der späteren Kompilierung durch den Browser den View repräsentiert, muss zunächst im Head-Bereich die Datei .JS eingebunden werden.
+
+Zusätzlich muss definiert werden, für welchen Bereich des HTML-Dokuments der definierte Controller Anwendung finden soll. Dies erfolgt über das AngularJS-Attribut ng-controller, das in diesem Fall im Body-Tag definiert wurde. Zusätzlich wird das input-Eingabefeld wieder, wie im oberen Beispiel, mit dem Attribut ng-model und dem Wert suche, erweitert. 
+
+Anschließend erfolgt mittels den HTMl-Tags ul und li eine Ausgabe der Adressbuchdaten. Beim li-Tag kommt das AngularJS-Attribut ng-repeat zu tragen, was einer Schleife ähnelt. Hierbei wird jedes Objekt aus dem im Controller definierten Array $scope.benutzer  durchlaufen und jeweils in eine lokale Variable person geschrieben. Da im Body-Tag definiert wurde, dass sich der gesamte Body-Bereich durch den AdressbuchController verwaltet wird, erfolgt ein Zugriff auf $scope.benutzer ledliglich durch benutzer. Auf die einzelnen Attribute des $scope.benutzer Arrays, wie Vorname und Name, kann über die lokale Variable person mittels Punktnotation auf die  entsprechenden Atttribute zugegriffen werden, wobei dies wieder als Expressions in geschweiften Klammern definiert wird. Dies sorgt dafür, dass alle Adressbuchdaten ausgegeben werden. Damit eine Einschränkung durch das Eingabefeld erfolgen kann, muss das ng-repeat-Attribut lediglich um die AngularJS-Filter-Anweisung mit Angabe des Eingabefeldes, folglich filter:suche, erweitert werden.
+
+Folglich erfolgt bei komplexeren Beispielen eine zweidimensionale Datenbindung über das $scope-Objekt, das eine automatische Verbindung zwischen Controller und View ermöglicht. 
 ### Dependency Injection
+Bei objektorientierter Programmierung ist es häufig anzutreffen, dass dass Objekte wiederum von anderen Objekten abhängig (dependent, daher: Dependency) sind. Dabei gibt es prinzipiell zwei Hauptmöglichkeiten zur Definition von Abhängigkeiten. 
+
+Die erste Möglichkeit, die im Folgenden Code minimalistisch skizziert ist, geht von der Tatsache aus, dass wir ein Adressbuch-Objekt haben und dieses über die Funktion sucheAdressbuch verfügt. Da die Adressdaten in einer Datenbank, weshalb auf ein Datenbank-Objekt zugegriffen werden muss. In diesem Fall wird daher in der Funktion über den new-Parameter ein neues Datenbank-Objekt angelegt. Demzufolge erfolgt hierbei die Instanziierung eines neuen Objekts und der Aufbau der Abhängigkeit innerhalb einer Funktion, welche das entsprechende Objekt benötigt.
+
+Der andere Ansatz verfolgt das Ziel, dass das Objekt der sucheAdressbuch-Funktion von außen als Übergabeparameter übergeben wird und demzufolge eine Instanziierung des Objektes nicht in der Funktion erfolgt, die das Objekt benötigt. Dieses Verfahren, das den Namen Dependenc Injection trägt, kommt bei AngularJS zum Tragen, was unter anderem bereits bei der $scope-Variable zu sehen war. Bei der Definition eines Controllers wird die $scope-Variable lediglich als Übergabeparameter übergeben und es ist demzufolge keine Instanziierung innerhalb des Controllers erforderlich. Bei Objekten, die Bestandteil vom AngularJS-Framework sind, zum Beispiel $scope, erfolgt eine automatische Instanziierung ohne gesonderte Definition durch den Programmierer.
+
+Bei eigens definierten Objekten hingegen kann der Programmierer zentral über sogenannte Injector-Methoden definieren, welche anderen Objekte in einem bestimmten Objekt benötigt werden und mit welchen Werten jene instanziiert werden sollen.
+
+Durch die Verfolgung des Dependency Injection Ansatzes wird eine bessere Testbarkeit erreicht, indem die reine Funktionalität von Funktionen, unabhängig von der Instanziierung von anderen Objekten, getestet werden kann, in dem den Funktionen bereits instanziierte Testobjekte übergeben werden.  
+
+
 
 ### Direktiven
 
