@@ -36,10 +36,6 @@ Dieses Vorhaben lässt sich unter anderem auch mit **reinem JavaScript** umsetze
 
 Wie in Abbildung X dargestellt, ermöglicht AngularJS eine **zweidimensionale Datenbindung**, in dem Änderungen am Model, in diesem Fall am Input-Feld, automatisch an den View, in diesem Beispiel die Expression im `h1-Tag`, weitergeleitet werden. Eine Änderung am `h1-Tag` würde auch im umgekehrten Fall zu einer Aktualisierung des Models führen. Folglich liegt ein **Kreislauf** vor.
 
-<<<<<<< HEAD
-
-=======
->>>>>>> FETCH_HEAD
 Anhand eines **weiteren Beispiels** wird erläutert, wie die zweidimensionale Datenbindung bei komplexeren Vorhaben, bei denen unter anderem **Controller** beteiligt sind, realisiert wird. Im [Beispiel](http://dwstoll.github.io/Codebeispiele/Adressbuch.html) ist wiederum ein Eingabefeld vorhanden. Unter diesem befindet sich eine Liste mit Vor- und Nachnamen und weiteren Details zu verschiedenen Personen. Somit stellt dies eine Art Adressbuch dar. Es soll ermöglicht werden, dass ein Benutzer in das Eingabefeld einen Vor- oder Nachnamen eingeben kann und nur noch die Adressbucheinträge angezeigt werden, die auf die Eingabe zutreffen.
 
 Zunächst wird die JavaScript-Datei [HauptController.JS](https://github.com/dwstoll/dwstoll.github.io/blob/master/Codebeispiele/HauptController.js) angelegt, in dem sich der Code für den Controller und das Model befindet. In AngularJS wird ein **Controller** durch eine **JavaScript-Funktion** definiert. Demzufolge stellt die Funktion AdressbuchController den Controller dar. Jeder Controller hat jeweils `$scope` als Funktionsparameter, welcher der Funktion übergeben wird. $scope stellt ein **Objekt** dar, welches eine **zweidimensionale Datenbindung** ermöglicht, da auf dieses Objekt neben dem Controller auch der View zugreifen kann. 
