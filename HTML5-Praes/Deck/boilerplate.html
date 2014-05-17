@@ -213,7 +213,7 @@
      <h2>Dependency Injection</h2>
 	 <p>Objekte sind wiederum von <strong>anderen Objekten abhängig</strong></p>
 	 <p>Möglichkeiten zur Instanziierung von Objekten und Definition von <strong>Abhängigkeiten</strong> </strong></p>
-         <div class="slide" id="dependencyinjection-eins">
+         <div class="slide" id="slide-11-1">
 	 <ol>
 		<li><strong>Innerhalb</strong> einer  <strong>Funktion</strong> über new-Parameter: Beispiel <strong>Adressbuch-Objekt</strong> (Problem: Testen: Unabhängigkeit ... eigene Testobjekte)</li>
 			<pre><code>function sucheAdressbuch(benutzer){
@@ -221,7 +221,7 @@
 	db.suche(benutzer);
 } </code></pre>
 </div>		
-		<div class="slide" id="dependencyinjection-zwei">
+		<div class="slide" id="slide-11-2">
 		<li><strong>Außerhalb</strong> einer <strong>Funktion</strong>: Objekt als <strong>Übergabeparameter</strong></li>
 	 <pre><code>function sucheAdressbuch(<strong>db</strong>,benutzer){
 	<strong>db</strong>.suche(benutzer);
