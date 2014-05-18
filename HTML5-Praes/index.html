@@ -217,20 +217,18 @@
 	 <p>Objekte sind wiederum von <strong>anderen Objekten abhängig</strong></p>
 	 <p>Möglichkeiten zur Instanziierung von Objekten und Definition von <strong>Abhängigkeiten</strong> </strong></p>
          <div class="slide" >
-	 <ol>
-		<li><strong>Innerhalb</strong> einer  <strong>Funktion</strong> über new-Parameter: Beispiel <strong>Adressbuch-Objekt</strong></li>
+	 <strong>1. Innerhalb</strong> einer  <strong>Funktion</strong> über new-Parameter: Beispiel <strong>Adressbuch-Objekt</strong>
 			<pre><code>function sucheAdressbuch(benutzer){
 	<strong>var db = new Database(...);</strong>
 	db.suche(benutzer);
 } </code></pre>
 </div>	
 		<div class="slide" >
-		<li><strong>Außerhalb</strong> einer <strong>Funktion</strong>: Objekt als <strong>Übergabeparameter</strong></li>
+		<strong>2. Außerhalb</strong> einer <strong>Funktion</strong>: Objekt als <strong>Übergabeparameter</strong>
 	 <pre><code>function sucheAdressbuch(<strong>db</strong>,benutzer){
 	<strong>db</strong>.suche(benutzer);
 } </code></pre>
 Zentrale Instanziierung von Objekten in Injector-Methoden
-	 </ol>
 	 </div>
 
     </section>
