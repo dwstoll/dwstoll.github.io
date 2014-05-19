@@ -4,7 +4,7 @@
 function AdressbuchController($scope) {	
 	
 	// $scope.benutzer stellt das Model dar, auf welches der View durch die $scope-Variable zugreifen kann
-	// $scope.benutzer ist ein Array von Objekten. 
+	// $scope.benutzer ist ein Array von Objekten
 	$scope.benutzer = [
 	{"vorname": "Max", "name": "Meier"},
 	{"vorname": "Florian", "name": "Wiegand"},
