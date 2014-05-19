@@ -2,16 +2,24 @@
 <html ng-app>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js" ></script>
+    <!-- Einbinden des erstellten Controllers -->
     <script src="HauptController.js" > </script>
   </head>
+  <!-- Bekanntmachung des Controllers für den gesamten Body-Bereichs -->
   <body ng-controller="AdressbuchController">
  
       <label >Bitte Vor- oder Nachnamen eingeben:</label>
+      <!-- Erweiteurng des Input-Eingabefeldes um das AngularJS ng-model Attribut. Input-Feld agiert als Model -->
       <input type="text" ng-model="suche" placeholder="Suchfeld">
 
 
        <ul>
+              <!-- Durch AngularJS-Attribut ng-repeat erfolgt eine Iteration über das Array benutzer (in Controller: $scope.benutzer). 
+                   Im Zuge der Iteration wird jede Person der lokalen Variable person zugewiesen. 
+                   Die AngularJS-Anweisung filter sorgt dafür, dass nur Personen angezeigt werden, deren Vor- oder Nachnamen
+                   im oberen Eingabefeld eingegeben wurden. --> 
               <li ng-repeat="person in benutzer | filter:suche">
+                <!-- Angular-JS-Expressions in geschweiften Klammern zur Ausgabe der Vor- und Nachnamen -->
                  Nachname: {{person.name}} <br /> 
                  Vorname: {{person.vorname}} <br /> Weitere Daten: <br /> <br /> 
               </li>
