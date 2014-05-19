@@ -11,7 +11,7 @@ Ursprünglich wurde der grundlegende Aufbau einer Webanwendung in AngularJS nach
 Im Laufe der Zeit hat sich auch das Model View ViewModel (MVVM) Konzept durchgesetzt. 
 In der AngularJS-Entwicklergemeinde ist man darüber nicht einig. Google selbt empfiehlt sich von der Architektur loszulösen und nennt das Prinzip **Model View Whatever** (MVW).
 
-Durch die Verwendung des AngularJS-Frameworks kann eine Webanwendung übersichtlicher lesbarer und übersichtlicher gestaltet werden. Ein weiterer Vorteil ist die Kompatibilität mit anderen JavaScript-Bibliotheken und eine große Entwicklergemeinschaft. Auch kann das Testen und Refactoring mit AngularJS vereinfacht werden. 
+Durch die Verwendung des AngularJS-Frameworks kann eine Webanwendung lesbarer und übersichtlicher gestaltet werden. Ein weiterer Vorteil ist die Kompatibilität mit anderen JavaScript-Bibliotheken und eine große Entwicklergemeinschaft. Auch kann das Testen und Refactoring mit AngularJS vereinfacht werden. 
 
 ## Quick Start
 
