@@ -6,8 +6,11 @@
   <body>
  
     <label>Name:</label>
+    <!-- Eingabefeld wird durch AngularJS-Attribut ng-model als Model definiert. -->
     <input type="text" ng-model="deinName" placeholder="Name eingeben">
       
+    <!-- Angular-JS-Expression in geschweiften Klammern zum Aufbau einer zweidimensionalen Datenbindung zwischen 
+         Model (Input-Feld) und View (H1-Tag) -->
     <h1>Herzlich Willkommen {{deinName}} </h1>
 
   </body>
